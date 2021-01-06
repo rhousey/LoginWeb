@@ -16,7 +16,6 @@
 	<table align = "center"><tr><td>${msg}</td>
 	<td></td></tr><tr><td>
 	<a href = "resetPassForm.jsp">Reset Your Password</a>
-	
 			<tr><td> 
 			<form action = "logout">
 			<input type = "submit" value = "logout">

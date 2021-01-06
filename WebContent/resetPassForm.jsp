@@ -10,17 +10,10 @@ String password = (String)session.getAttribute("password");
 <title></title>
 <script>
 function validate(){ 
-	var oldPass = document.form.oldPass.value; 
 	var newPass = document.form.newPass.value; 
 	var confirmPass = document.form.confirmPass.value; 
 
-	//var password = document.form.password.value; 
-	if(oldPass == null || oldPass == ""){ 
-		alert("Current Password Required"); 
-	return false; 
-	
-	}
-	else if(newPass == null || newPass == ""){ 
+	 if(newPass == null || newPass == ""){ 
 		alert("New Password Required"); 
 	return false; 
 	

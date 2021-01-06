@@ -21,7 +21,6 @@ public class recoverPassServlet extends HttpServlet {
 	    private String user;
 	    private String pass;
 	   
-	    
         public recoverPassServlet() {
         super();
         // TODO Auto-generated constructor stub
