@@ -20,6 +20,8 @@ else if(password == null || password == "")
 }
 }</script>
 </head>
+<h2>User Login</h2>
+
 <body>
 	<form method="post" action="LoginServlet">
 		<table>

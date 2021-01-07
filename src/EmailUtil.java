@@ -4,7 +4,6 @@ import java.sql.Statement;
 import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
-
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -32,7 +31,6 @@ public class EmailUtil{
         prop.put("mail.smtp.port", "587");
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.required", "true");
-	    
 	    Session s = Session.getDefaultInstance(prop, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication("*********", "********");
@@ -41,7 +39,7 @@ public class EmailUtil{
       
 	try {
 	Message msg = new MimeMessage(s); 
-	msg.setFrom(new InternetAddress(*****, *****));	
+	msg.setFrom(new InternetAddress("*****", "*****"));	
 	InternetAddress[] to = {new InternetAddress(email)}; 
 	msg.setRecipients(Message.RecipientType.TO, to); 
 	msg.setSubject("Reset Pass");

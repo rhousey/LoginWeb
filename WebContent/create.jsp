@@ -33,7 +33,7 @@ function validate()
 </head>
 <body>
 	<center>
-		<h2>Java Registration application using MVC and MySQL</h2>
+		<h2>User Registration Form</h2>
 	</center>
 	<form name="form" action="MemberServlet" method="post"
 		onsubmit="return validate()">

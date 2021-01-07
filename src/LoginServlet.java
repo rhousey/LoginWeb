@@ -24,8 +24,7 @@ public class LoginServlet extends HttpServlet {
 		UserDao userDao = new UserDao(); 
 		String validate = userDao.authenticateUser(member); 
 		
-		if(validate.equals("SUCCESS")) {
-			
+		if(validate.equals("SUCCESS")) {	
 			HttpSession session = request.getSession(true);  
 			session.setAttribute("username", username);
 			request.setAttribute("username", username);
